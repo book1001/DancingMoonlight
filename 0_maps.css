@@ -1,0 +1,270 @@
+@font-face {
+  font-family : 'bb-book-mono';
+  src: url("./fonts/bb-book-mono.woff") format('woff'),
+        url("./fonts/bb-book-mono.woff2") format("woff2"),
+        url("./fonts/bb-book-mono.otf") format('otf'),
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#map {
+  height: 100%;
+}
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+  /* display: inline; */
+  height: 100%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Info Window Text */
+#firstHeading {
+  padding-bottom: 6px;
+}
+
+.gm-style-iw-d {
+  /* font-family: bb-book-mono, sans-serif; */
+  font-family: FKRasterGroteskTrial-Blended;
+  color: #000000;
+  /* color: #00ff00; */
+}
+
+/* Info Window x icon */
+button.gm-ui-hover-effect {
+  top: -3px !important;
+  right: -3px !important;
+}
+.gm-ui-hover-effect{
+  opacity: 1;
+}
+
+
+
+div.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  border: 2px solid #4CAF50;
+}
+
+div.fixed {
+  position: fixed;
+  top: -45px;
+  left: 15px;
+  width: 100%;
+  height: 400px;
+  /* background-color: #ffffff; */
+  /* border: 3px solid #73AD21; */
+  font-family: Brutal-Light, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  /*detail*/
+  font-size: 8.3rem;
+  line-height: 1.6;
+}
+
+
+.inactiveLink {
+   pointer-events: none;
+   cursor: default;
+}
+
+
+
+
+
+/* .gm-iv-container{
+  margin-top:100px;
+}
+.gm-iv-address{
+  margin-top:100px;
+} */
+
+
+
+/* Map BG color */
+
+#map > div {
+  background-color: #0f1015 !important; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(180deg, #000000 0%, #000000 50%, #000000 50%, #000000 100%);
+  /* background-image: repeating-linear-gradient(180deg, #1500ff 0%, #1500ff 50%, #0f1015 50%, #0f1015 100%); */
+}
+
+
+/* Buttons Style */
+
+/* Pegman */
+.gm-svpc {
+  border-radius: 25px !important;
+  /* border: 1.5px solid !important; */
+  border-color: #ffffff !important;
+  background-color: #ffffff !important;
+  box-shadow: rgb(0 0 0 /0%) 0px 1px 4px -1px !important;
+  width: 50px !important;
+  height: 50px !important;
+  margin-left: -10px;
+}
+
+
+/* Zoom-In, Zoom-Out buttons */
+.gmnoprint{
+  /* display: none; */
+  /* z-index: 10 !important; */
+  margin-bottom: 19px;
+  margin-left: -5px;
+}
+
+.gmnoprint > div {
+  box-shadow: rgb(0 0 0 /0%) 0px 1px 4px -1px !important;
+  /* border-radius: 20px !important; */
+  /* background-color: transparent !important; */
+  /* z-index: 5 !important; */
+}
+
+button.gm-control-active > img {
+  visibility: hidden !important;
+}
+
+.gmnoprint > div > div {
+  padding-bottom:10px;
+  background-color: transparent !important;
+}
+
+.custom-zoom-icon{
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  width: 40px;
+  height: 91px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+/* Bottom Water Mark */
+.gm-style-cc{
+  display: none;
+}
+
+
+
+/* div.gm-style > div > div {
+  top: 100px;
+} */
+
+.gm-fullscreen-control{
+  display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 3D view: campus button */
+.gm-compass {
+  display: none;
+  margin-left: -2.5px;
+}
+
+
+.gm-iv-address-description{
+  pointer-events: none !important;
+  max-width: 100% !important;
+}
+
+.gm-iv-profile-url > a{
+  opacity: 1 !important;
+}
+
+.gm-iv-profile-link{
+  font-family: bb-book-mono, sans-serif !important;
+  font-size: 6em !important;
+  /* margin-top: 100px !important; */
+  color: #ffffff !important;
+  opacity: 1 !important;
+  font-weight: normal !important;
+  pointer-events: none !important;
+}
+
+
+.gm-iv-short-address-description{
+  font-family: bb-book-mono, sans-serif !important;
+  font-size: 6em !important;
+  /* margin-top: 100px !important; */
+  color: #ffffff !important;
+  opacity: 1 !important;
+  pointer-events: none !important;
+}
+
+.gm-iv-container{
+  background-color: transparent !important;
+  border-right: 0px !important;
+}
+
+.gm-iv-address{
+  opacity: 1 !important;
+  background-color: transparent !important;
+}
+
+.gm-iv-long-address-description{
+  display: none !important;
+  font-family: bb-book-mono, sans-serif !important;
+  font-size: 3em !important;
+  margin-top: 100px !important;
+}
+
+/* View on Google Maps */
+.gm-iv-address-link > a{
+  /* display: none; */
+  font-family: bb-book-mono, sans-serif !important;
+  font-size: 6em !important;
+  color: transparent !important;
+  /* color: red !important; */
+  margin-top: 0px !important;
+  pointer-events: none !important;
+}
+
+.gm-iv-marker {
+  display: none;
+}
+
+.gm-iv-back-icon-background {
+  background-image: url("palm-tree.svg") !important;
+}
+
+
+/* 3d view: 1,2,3 buttons */
+.gm-bundled-control-on-bottom > div > button {
+  display: none;
+}
