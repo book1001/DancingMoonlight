@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>🌎</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS: Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/ewy8kjf.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+    <!-- CSS: Dancing in the Moonlight -->
+    <link rel="stylesheet" href="0_maps.css">
+    <link rel="stylesheet" href="1_scrolling.css">
+    <link rel="stylesheet" href="1_UI.css">
+
+    <!-- P5js: coutume -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/addons/p5.sound.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.2/dist/ml5.min.js"></script>
+
+    <!-- p5.capture: insert after p5.js -->
+    <script src="https://cdn.jsdelivr.net/npm/p5.capture@1.2.0/dist/p5.capture.umd.min.js"></script>
+
+  </head>
+
+  <body>
+    <style>
+      .p5c-btn::after {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          content: "";
+          width: 26px;
+          height: 26px;
+          border-radius: 50%;
+          background: #f56565;
+          transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+      }
+      .p5c-btn {
+          position: relative;
+          width: 50px;
+          height: 50px;
+          border: none;
+          border-radius: 50%;
+          cursor: pointer;
+          background: #f7fafc;
+          box-shadow: 0px 0px 0px;
+      }
+      .p5c-container {
+          position: absolute;
+          top: 12px;
+          left: 0px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          padding: 10px;
+          font-family: Menlo, Consolas, monospace;
+          font-size: 1rem;
+          color: #f7fafc;
+          background: rgba(255, 0, 255, 0.5);
+          border-radius: 8px;
+          text-shadow: 0px 0px 0px;
+          box-shadow: 0 0 0px;
+          cursor: move;
+      }
+      label {
+        display: none;
+      }
+      .p5c-format {
+        display: none;
+      }
+      .p5c-framerate {
+        display: none;
+      }
+    </style>
+
+    <script>
+      P5Capture.setDefaultOptions({
+        format: "gif",
+        framerate: 10,
+        quality: 0.5,
+        width: 320,
+      });
+    </script>
+
+    <!-- <iframe src="sketch.html" style="display: block; z-index: 5; position: fixed; top:0; left:0; width:100%; height:100%; border:none; pointer-events:none; overflow:hidden;"></iframe> -->
+     <script src="sketch.js"></script>
+
+  </body>
+</html>

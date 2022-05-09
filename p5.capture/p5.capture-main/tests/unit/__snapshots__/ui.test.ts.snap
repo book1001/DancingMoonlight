@@ -1,0 +1,22 @@
+// Vitest Snapshot v1
+
+exports[`#createUi > inserts the UI into the parent element 1`] = `
+"<div class=\\"p5c-container idle\\">
+  <div class=\\"p5c-options\\">
+    <label for=\\"p5c-format\\">format</label
+    ><select id=\\"p5c-format\\" class=\\"p5c-format\\">
+      <option>WebM</option>
+      <option>GIF</option>
+      <option>MP4</option>
+      <option>PNG</option>
+      <option>JPG</option>
+      <option>WebP</option></select
+    ><label for=\\"p5c-framerate\\">framerate</label
+    ><input id=\\"p5c-framerate\\" class=\\"p5c-framerate\\" type=\\"number\\" min=\\"1\\" />
+  </div>
+  <div class=\\"p5c-main\\">
+    <button class=\\"p5c-btn\\"></button><span class=\\"p5c-counter\\"></span>
+  </div>
+</div>
+"
+`;
